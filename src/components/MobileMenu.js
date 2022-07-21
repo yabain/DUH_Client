@@ -37,13 +37,14 @@ class MobileMenu extends Component {
       { label: 'What People Need', link: '/WhatPeopleNeed' },
       { label: 'What You Need', link: '/WhatYouNeed' },
       { label: 'About Us', link: '/About' },
-      { label: 'Contact', link: '/Contact'}
+      { label: 'Contact', link: '/Contact'},
+      { label: 'Blog', link: '/Blog'}
     ];
 
     return (
       <div className="MobileMenu">
         <div className="hamburger-menu" onClick={this.onHamburger}>
-          <img src={HamburgerImg} />
+          <img alt="img" src={HamburgerImg} />
         </div>
         {
           this.state.showMenu ? (

@@ -230,6 +230,7 @@ let options = [
       { id: 27, name: "What You Need", to: "/WhatYouNeed" },
       { id: 28, name: "About Us", to: "https://www.duhflip.com/" },
       { id: 29, name: "Contact", to: "/Contact" },
+      { id: 29, name: "Blog", to: "/Blog" },
       { id: 30, name: "Partners", to: "/Partners" },
     ],
   },

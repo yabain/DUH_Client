@@ -95,8 +95,8 @@ class Login extends Component {
       if (window.location.pathname.indexOf("forgotPassword") !== -1) {
         window.location = "/";
       } else {
-        window.location.reload();
-        window.location = "/WhatPeopleNeed";
+        // window.location.reload();
+        // window.location = "/WhatPeopleNeed";
       }
     } else {
       this.setState({

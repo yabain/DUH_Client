@@ -162,7 +162,7 @@ class ItemDetails extends Component {
                 </div>
               </>
             ) : (
-              <Container className='w-100' style={{ padding: '10% 0' }}>
+              <Container className='w-100' style={{ padding: '130px 0' }}>
                 <Row>
                   <Col>
                   <p className='product-text-alt text-uppercase DoUHave text-center d-block w-100 font-weight-bold'>
@@ -188,8 +188,8 @@ class ItemDetails extends Component {
                 <Col><AdsBar/></Col>
                 <Col>
                   <img
-                    style={{ maxWidth: "30vw", height: "auto" }}
                     className='ItemDetailImage'
+                    style={{ height: "auto" }}
                     src={
                       itemToShow.itemImg.startsWith('http')
                         ? itemToShow.itemImg
@@ -199,7 +199,7 @@ class ItemDetails extends Component {
                           )
                     }
                   />
-                  <p>{ itemToShow.description }</p>
+                  <p style={{ textAlign: "justify" }}>{ itemToShow.description }</p>
                   </Col>
                   <Col><AdsBar/></Col>
                 </Row>

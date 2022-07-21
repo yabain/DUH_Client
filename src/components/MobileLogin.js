@@ -6,6 +6,7 @@ import DEFAULT_IMAGE from "../img/user3.jpg";
 import Constant from "../util/Constant";
 import OfferService from "../services/OfferService";
 import { Badge } from "reactstrap";
+import { Button } from "./Button";
 
 class MobileLogin extends Component {
   constructor(props) {
@@ -52,9 +53,13 @@ class MobileLogin extends Component {
           <div className="registerText">
             <a
               style={{ color: "#000000", textDecoration: "none" }}
-              href="/Register"
+              href="/Signin"
             >
-              SIGN UP
+            <Button
+              type="button"
+              buttonStyle="btn--warning--outline"
+              buttonSize="btn--medium"
+             >SIGN IN</Button>
             </a>
             <div className="space-break" />
           </div>
@@ -63,9 +68,13 @@ class MobileLogin extends Component {
           <div className="registerText">
             <a
               style={{ color: "#000000", textDecoration: "none" }}
-              href="/Signin"
+              href="/Register"
             >
-              SIGN IN
+            <Button
+              type="button"
+              buttonStyle="btn--warning--outline"
+              buttonSize="btn--medium"
+             >SIGN UP</Button>
             </a>
             <div className="space-break" />
           </div>

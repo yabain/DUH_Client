@@ -86,7 +86,7 @@ class ItemBox extends Component {
     const showSaveItem = this.props.showSaveItem === false || !UserService.isConnected() ? false : true;
 
     return (
-      <div className='box-alt'>
+      <div className='box-alt cardItem'>
         <Link to={{
             pathname: `/item/${item.itemId ? item.itemId : item._id}`,
             state: { item } }}>

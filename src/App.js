@@ -30,9 +30,11 @@ import UserService from './services/UserService.js';
 import Constant from './util/Constant.js';
 import { getCookie } from './util/storage.js';
 import ApiService from './services/ApiService.js';
-import  MetaTags from './components/MetaTags.js';
+import MetaTags from './components/MetaTags.js';
+import Blog from './components/Blog.js'
 
 import './App.scss';
+import './Appstyle.scss';
 
 class App extends Component {
   constructor(props) {
@@ -64,15 +66,15 @@ class App extends Component {
     this.getItems = this.getItems.bind(this);
     this.getItemsInfinite = this.getItems.bind(this, true);
     this.searchBehaviorObject = ItemService.getSearchBehaviorObject();
-   
+
   }
 
-  
+
   onTextChange(event) {
     this.setState({ searchTerm: event.target.value });
   }
-  
- 
+
+
   onDistanceChange(event) {
     this.setState({ lastId: '', searchResults: [], distance: event.target.value });
   }
@@ -87,7 +89,7 @@ class App extends Component {
     if (!this.state.zipCode || this.state.zipCode.length !== 5) return alert('Invalid zip code provided.');
 
     if (window.location.pathname !== '/' && window.location.pathname !== '/WhatPeopleNeed') {
-      window.location = `/WhatPeopleNeed?zipCode=${ this.state.zipCode }&distance=${ this.state.distance }`;
+      window.location = `/WhatPeopleNeed?zipCode=${this.state.zipCode}&distance=${this.state.distance}`;
     } else {
       this.searchBehaviorObject.next({ zipCode: this.state.zipCode, distance: this.state.distance });
     }
@@ -107,13 +109,13 @@ class App extends Component {
    */
   getItems(isInfiniteScroll = false) {
     ItemService.getAllItems('all', this.state.lastId, this.state.zipCode, this.state.distance)
-    .then((json) => {
+      .then((json) => {
         if (json && json.count > 0) {
           json.items = json.items || [];
-        
-          this.setState({ 
-            searchResults: this.state.searchResults.concat(json.items), 
-            lastId: json.lastId, 
+
+          this.setState({
+            searchResults: this.state.searchResults.concat(json.items),
+            lastId: json.lastId,
             disableInfiniteScroll: json.items.length === 0 ? true : false
           });
         }
@@ -126,7 +128,7 @@ class App extends Component {
   onSearch() {
     this.handleSearch();
   }
-  
+
   async verifyUser() {
     const obj = getCookie();
 
@@ -136,7 +138,7 @@ class App extends Component {
       if (token) {
         try {
           let json = await ApiService.verifyUser(token);
-          
+
           if (!json.error) {
             const userSession = {
               token,
@@ -175,81 +177,81 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <MetaTags/>
+        <MetaTags />
         <Header isAuth={isAuth} userName={userName} firstName={firstName} />
         <MobileMenu />
         <div className='AppContainer'>
-          <SideBarMenu  />
+          <SideBarMenu />
           <div className="Content">
-          
-         
-          
-          { this.state.showResults ? (
-            <InfiniteScroll dataLength={this.state.searchResults.length} next={this.getItemsInfinite} >
-              <Spinner
-                className='block-center'
-                style={{
-                  width: '5rem',
-                  height: '5rem',
-                  position: 'absolute',
-                  top: '19rem',
-                  left: '47%',
-                }}
-              />
 
-              <h3
-                style={{
-                  color: '#000',
-                  position: 'absolute',
-                  top: '26rem',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                }}>
-                Did You Know?
-              </h3>
-              <p
-                style={{
-                  color: '#000',
-                  position: 'absolute',
-                  top: '29rem',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                }}>
-                DOUHAVE's "Get Matches Now" service searches over 80 different platforms for you when you post what you need?
-              </p>
-              <SearchResults
-                isAuth={isAuth}
-                userId={userId}
-                searchResults={this.state.searchResults}
-                token={token}
-                firstName={firstName}
-                zipCode={zipCode}
-                distance={distance}
-                zipResults={zipResults}
-              />
-            </InfiniteScroll>
-          ) : (
-            <BrowserRouter>
-              <Routes>
-                <Route
-                  path='/'
-                  element={
-                    
+
+
+            {this.state.showResults ? (
+              <InfiniteScroll dataLength={this.state.searchResults.length} next={this.getItemsInfinite} >
+                <Spinner
+                  className='block-center'
+                  style={{
+                    width: '5rem',
+                    height: '5rem',
+                    position: 'absolute',
+                    top: '19rem',
+                    left: '47%',
+                  }}
+                />
+
+                <h3
+                  style={{
+                    color: '#000',
+                    position: 'absolute',
+                    top: '26rem',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                  }}>
+                  Did You Know?
+                </h3>
+                <p
+                  style={{
+                    color: '#000',
+                    position: 'absolute',
+                    top: '29rem',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                  }}>
+                  DOUHAVE's "Get Matches Now" service searches over 80 different platforms for you when you post what you need?
+                </p>
+                <SearchResults
+                  isAuth={isAuth}
+                  userId={userId}
+                  searchResults={this.state.searchResults}
+                  token={token}
+                  firstName={firstName}
+                  zipCode={zipCode}
+                  distance={distance}
+                  zipResults={zipResults}
+                />
+              </InfiniteScroll>
+            ) : (
+              <BrowserRouter>
+                <Routes>
+                  <Route
+                    path='/'
+                    element={
+
                       <Home
-                          isAuth={isAuth}
-                          userName={userName}
-                          firstName={firstName}
-                          userId={userId}
-                          token={token}
-                          zipCode={zipCode}
-                          distance={distance}
-                        />
-                    
-                  }/>
-                <Route
-                  path={'/WhatPeopleNeed'}
-                  element={
-                    
+                        isAuth={isAuth}
+                        userName={userName}
+                        firstName={firstName}
+                        userId={userId}
+                        token={token}
+                        zipCode={zipCode}
+                        distance={distance}
+                      />
+
+                    } />
+                  <Route
+                    path={'/WhatPeopleNeed'}
+                    element={
+
                       <WhatPeopleNeed
                         isAuth={isAuth}
                         userName={userName}
@@ -259,13 +261,13 @@ class App extends Component {
                         zipCode={zipCode}
                         distance={distance}
                       />
-                    
-                  }
-                />
-                <Route
-                  path={'/WhatYouNeed'}
-                  element={
-                    
+
+                    }
+                  />
+                  <Route
+                    path={'/WhatYouNeed'}
+                    element={
+
                       <WhatYouNeed
                         isAuth={isAuth}
                         email={email}
@@ -276,62 +278,63 @@ class App extends Component {
                         zipCode={zipCode}
                         distance={distance}
                       />
-                    
-                  }
-                />
-                <Route path={'/HowItWorks'} element= { <HowItWorks />} />
-                <Route path={'/PaymentFormLoader'} element={ <PaymentFormLoader />} />
 
-                <Route path={'/About'} element={ <About />} />
-                <Route path={'/Contact'} element={ <Contact />} />
-                <Route path={'/Register'} element={ <Register />} />
-                <Route path={'/Signin'} element={ <Login />} />
-                <Route path={'/email-confirmed'} element={ <EmailConfirmed />} />
+                    }
+                  />
+                  <Route path={'/HowItWorks'} element={<HowItWorks />} />
+                  <Route path={'/Blog'} element={<Blog />} />
+                  <Route path={'/PaymentFormLoader'} element={<PaymentFormLoader />} />
 
-                <Route path={'/messages'} element={ <Messages />} />
-                <Route path='/item/:id' element={<ItemDetails />} />
-                <Route path='/forgotPassword/:resetToken' element={<ForgotPassword/>} />
-                <Route path='/forgotPassword' element={<ForgotPassword/>} />
-                <Route path={'/chat_view/:itemId/offerings'} element={<ChatView type='offerings' />} />
-                <Route path={'/chat_view/:itemId/inquired'} element={<ChatView type='inquired' />} />
+                  <Route path={'/About'} element={<About />} />
+                  <Route path={'/Contact'} element={<Contact />} />
+                  <Route path={'/Register'} element={<Register />} />
+                  <Route path={'/Signin'} element={<Login />} />
+                  <Route path={'/email-confirmed'} element={<EmailConfirmed />} />
 
-                <Route path={'/:route'} element={
-                  <CategoryItems
-                    isAuth={isAuth}
-                    userName={userName}
-                    firstName={firstName}
-                    userId={userId}
-                    token={token}
-                    zipCode={zipCode}
-                    distance={distance}
-                  /> }
-                />
-               
-              <Route path={'/userpanel'} element={
-                <UserPanel
-                  zipCode={zipCode}
-                  userId={userId}
-                  token={token}
-                  distance={distance}
-                /> }
-              />
+                  <Route path={'/messages'} element={<Messages />} />
+                  <Route path='/item/:id' element={<ItemDetails />} />
+                  <Route path='/forgotPassword/:resetToken' element={<ForgotPassword />} />
+                  <Route path='/forgotPassword' element={<ForgotPassword />} />
+                  <Route path={'/chat_view/:itemId/offerings'} element={<ChatView type='offerings' />} />
+                  <Route path={'/chat_view/:itemId/inquired'} element={<ChatView type='inquired' />} />
 
-                <Route path={'/advanced'} element={
-                  <AdvancedSearch
-                    isAuth={isAuth}
-                    userId={userId}
-                    token={token}
-                    firstName={firstName}
-                    zipCode={zipCode}
-                    distance={distance}
-                  /> }
-                />
+                  <Route path={'/:route'} element={
+                    <CategoryItems
+                      isAuth={isAuth}
+                      userName={userName}
+                      firstName={firstName}
+                      userId={userId}
+                      token={token}
+                      zipCode={zipCode}
+                      distance={distance}
+                    />}
+                  />
 
-              </Routes>
-            </BrowserRouter>
-          )}
-          
-          {/*<!-- end content div -->*/}
+                  <Route path={'/userpanel'} element={
+                    <UserPanel
+                      zipCode={zipCode}
+                      userId={userId}
+                      token={token}
+                      distance={distance}
+                    />}
+                  />
+
+                  <Route path={'/advanced'} element={
+                    <AdvancedSearch
+                      isAuth={isAuth}
+                      userId={userId}
+                      token={token}
+                      firstName={firstName}
+                      zipCode={zipCode}
+                      distance={distance}
+                    />}
+                  />
+
+                </Routes>
+              </BrowserRouter>
+            )}
+
+            {/*<!-- end content div -->*/}
           </div>
           <SideBarAdsContainer />
         </div>

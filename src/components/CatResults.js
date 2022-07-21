@@ -434,7 +434,7 @@ class CatResults extends Component {
               <Row style={{ margin: '0px' }}>
                 {this.state.filteredResults.length > 0 ? (
                   this.state.filteredResults.map((model) => (
-                    <Col xs='12' sm='12' md='6' lg='4' xl='3' key={model._id}>
+                    <Col xs='6' sm='6' md='6' lg='4' xl='3' key={model._id}>
                       <ItemBox item={model} showSaveItem={true}/>
                     </Col>
                   ))
@@ -460,7 +460,7 @@ class CatResults extends Component {
               <Row style={{ margin: '0px' }}>
                 {this.state.models.length > 0 ? (
                   this.state.models.map((model) => (
-                    <Col xs='12' sm='12' md='6' lg='4' xl='3' key={model._id}>
+                    <Col xs='6' sm='6' md='6' lg='4' xl='3' key={model._id}>
                       <ItemBox item={model} showSaveItem={true}/>
                     </Col>
                   ))

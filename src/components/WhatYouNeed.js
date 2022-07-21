@@ -14,7 +14,7 @@ class WhatYouNeed extends Component {
 
     if (isAuth) {
       return (
-        <div className="WhatYouNeed">
+        <div className="WhatYouNeed" style={{ padding: '130px 0' }}>
           <div className="WhatYouNeedHeaders">
             <h1 style={{ paddingTop: '150px' }}>WHAT ARE YOU LOOKING FOR?</h1>
             <h3 style={{

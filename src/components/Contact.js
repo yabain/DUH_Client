@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
   render() {
     return (
-      <div className='Contact'>
+      <div className='Contact' style={{padding: '120px 10px'}}>
         <h1>Contact</h1>
         <br />
         <h4>

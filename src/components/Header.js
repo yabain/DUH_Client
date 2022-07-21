@@ -6,7 +6,14 @@ import Drawer from "./Drawer";
 import Login from "./Login";
 import MobileLogin from "./MobileLogin";
 import UserDrawer from "./UserDrawer";
+import { Button } from "./Button.js";
+
 class Header extends Component {
+  divStyles = {
+    boxShadow: '1px 2px 9px #F4AAB9',
+    margin: '4em',
+    padding: '1em',
+  };
   render() {
     let isAuth = this.props.isAuth;
 
@@ -19,8 +26,17 @@ class Header extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-4 col-4 d-flex justify-content-start align-items-center">
-                <a className="btn-post-it" href="/WhatYouNeed">
-                  <img className="post-btn-img" src={PostButton} alt="PostButton" />
+                <a href="/WhatYouNeed">
+                  <Button
+                    type="button"
+                    buttonStyle="btn--warning--solid"
+                    buttonSize="btn--medium"
+                    style={{
+                      boxShadow: '1px 2px 9px #F4AAB9',
+                      margin: '4em',
+                      padding: '1em',
+                    }}
+                  ><b>POST IT</b></Button>
                 </a>
               </div>
               <div className="col-lg-4 col-4 d-flex justify-content-center align-items-center">

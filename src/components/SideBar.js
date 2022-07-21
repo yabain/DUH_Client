@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaFacebookF, FaInstagram, FaMusic, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import SidebarBlackImg from '../img/Sidebar- Black.png';
 import NavBar from './NavBar.js';
 
@@ -21,6 +21,7 @@ class SideBar extends Component {
         label: 'Our Collection',
         link: 'https://duhflip.com/duh-collection',
       },
+      { label: 'Blog', link: '/Blog' },
     ];
 
     return (
@@ -51,9 +52,9 @@ class SideBar extends Component {
           <a
             href='https://www.tiktok.com/@team.douhave?lang=en'
             target='_blank'>
-            <FaMusic className='footer-icon' />
+            <FaTiktok className='footer-icon' />
           </a>
-          <p>© 2021 | Douhave.co | All Rights Reserved</p>
+          <p>© 2022 | Douhave.co | All Rights Reserved</p>
         </div>
         <div>
           <ins

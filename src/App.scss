@@ -1,6 +1,5 @@
-
-@import "https://fonts.googleapis.com/css?family=McLaren";
-@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap";
+// @import "https://fonts.googleapis.com/css?family=McLaren";
+//@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap";
 @font-face {
 	font-family: 'RIVERHACK';
 	font-style: normal;
@@ -81,9 +80,6 @@ code {
 }
 .post-btn-img {
 	width: 100%;
-}
-.header-logo-img {
-	width: 25%;
 }
 .EmailConfirmationBox {
 	padding: 10px 0;
@@ -324,8 +320,8 @@ input {
 	width: 35px;
 }
 .Search {
-	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	text-align: center;
 	button {
 		border: none;
@@ -525,7 +521,7 @@ a {
 }
 
 .Content{
-	margin-top: 150px;
+	margin-top: 0px;
 	margin-left: 15vw;
 	width: 70vw;
 	display: inline-block;
@@ -621,8 +617,8 @@ a {
 	}
 }
 .UserPanel {
-	margin-left: 19%;
-	padding: 135px 270px;
+	margin-left: 0;
+	padding: 45px 0 0 0;
 }
 .chat-message {
 	white-space: pre-wrap;
@@ -684,8 +680,8 @@ a {
 .Categories {
 	text-align: center;
 	vertical-align: top;
-	padding-top: 20px;
-	max-width: 80%;
+	// padding-top: 20px;
+	max-width: 100%;
 	margin: auto;
 }
 .searchGoButton {
@@ -1324,30 +1320,166 @@ textarea {
 		margin-left: 50px;
 	}
 }
+
+.ItemDetailImage{
+	max-width: 50vw;
+}
+
 #main {
 	transition: margin-left 0.5s;
 	padding: 20px;
 }
+@media only screen and (min-width: 1800px) {
+	// .Categories {
+	// 	padding-left: 40px;
+	// }
+	.post-button-box {
+		width: 36%;
+		margin-left: 140px;
+	}
+	.categoryResults {
+		padding-left: 80px;
+	}
+}
+@media only screen and (min-width: 1700px) and (max-width: 2100px){
+	.header-logo-img {
+		margin-top: 5px;
+		width: 20%;
+	}
+	.WhatPeopleNeed {
+		padding: 50px 0 0 0%;
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 1700px) {
+	// .Categories {
+	// 	padding-left: 40px;
+	// }
+	.post-button-box {
+		width: 36%;
+		margin-left: 130px;
+	}
+	.categoryResults {
+		padding-left: 80px;
+	}
+}
+@media only screen and (min-width: 1600px) {
+	// .Categories {
+	// 	padding-left: 40px;
+	// }
+	.post-button-box {
+		width: 36%;
+		margin-left: 120px;
+	}
+	.categoryResults {
+		padding-left: 80px;
+	}
+}
+@media only screen and (min-width: 1500px) {
+	// .Categories {
+	// 	padding-left: 40px;
+	// }
+	.categoryResults {
+		padding-left: 80px;
+	}
+	.post-button-box {
+		width: 36%;
+		margin-left: 120px;
+	}
+}
+@media only screen and (min-width: 1400px) and (max-width: 1700px){
+	.header-logo-img {
+		margin-top: 5px;
+		width: 25%;
+	}
+	.WhatPeopleNeed {
+		padding: 50px 0 0 0%;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.WhatPeopleNeed {
+		text-align: center;
+		// padding: 50px 0 0 14%;
+	}
+	.sub-menu-li {
+		a {
+			font-size: 16px;
+		}
+	}
+}
+@media only screen and (min-width: 1350px) {
+	.post-button-box {
+		width: 36%;
+		margin-left: 110px;
+	}
+	// .Categories {
+	// 	padding-left: 40px;
+	// }
+	.categoryResults {
+		padding-left: 80px;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+	.header-logo-img {
+		margin-top: 5px;
+		width: 30%;
+	}
+	.CategoryItems {
+		text-align: center;
+		padding: 105px 14%;
+	}
+	.WhatPeopleNeed {
+		padding: 45px 0 0 0%;
+		text-align: center;
+	}
+}
 @media only screen and (max-width: 1200px) {
+	.WhatPeopleNeed {
+		padding: 45px 0 0 0%;
+		text-align: center;
+	}
+	.header-logo-img {
+		margin-top: 5px;
+		width: 35%;
+	}
 	.Search {
-		width: 53%;
+		padding: 20px;
+		width: 100%;
 	}
 	.CategoryItems {
 		text-align: center;
 		padding: 100px 14%;
 	}
 }
-@media only screen and (max-width: 1300px) {
-	.CategoryItems {
+@media only screen and (min-width: 1200px) {
+	// .Categories {
+	// 	padding-left: 40px;
+	// }
+	.aboutTitle {
+		margin-left: 15rem;
+	}
+	.categoryResults {
+		padding-left: 80px;
+	}
+	.post-button-box {
+		width: 36%;
+		margin-left: 100px;
+	}
+}
+@media only screen and (max-width: 1099px) {
+	.WhatPeopleNeed {
+		padding: 45px 0 0 0%;
 		text-align: center;
-		padding: 105px 14%;
 	}
 }
 @media only screen and (max-width: 1024px) {
 	.WhatPeopleNeed {
-		height: 75px;
-		top: -22px;
-		left: 0;
+		padding: 45px 0 0 0%;
+		text-align: center;
+		// height: 75px;
+		// top: -22px;
+		// left: 0;
 	}
 	.site-title {
 		img {
@@ -1364,6 +1496,7 @@ textarea {
 		font-size: 16px;
 	}
 	.Search {
+		padding: 20px;
 		button {
 			font-size: 24px;
 		}
@@ -1433,7 +1566,108 @@ textarea {
 		padding: 14% 3% 0 20%;
 	}
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	// .Categories {
+	// 	padding-left: 40px;
+	// 	padding-left: 40px;
+	// }
+	.categoryResults {
+		padding-left: 80px;
+		padding-left: 80px;
+		padding-left: 0px;
+		width: 105%;
+	}
+	.aboutTitle {
+		margin-left: 15rem;
+	}
+	.Search {
+		padding: 20px;
+		text-align: center;
+	}
+	.sideBar {
+		width: 30%;
+	}
+	.searchHeight {
+		width: 50%;
+	}
+	.post-button-box {
+		display: inline-block;
+		text-align: left;
+		width: 16%;
+		margin-left: 50px;
+		img {
+			height: 40px;
+		}
+	}
+	.WhatYouNeed {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.drawer-toggle {
+		display: none;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.blogPosition{
+	  padding: 115px 0 0 0%;
+	}
+	.sub-menu {
+		display: none;
+	}
+	.message-box {
+		padding: 20% 10%;
+	}
+	.mobile-login {
+		display: none;
+	}
+	.CategoryItems {
+		text-align: center;
+		padding: 12px;
+	}
+	.SignupInput {
+		input {
+			border: 1px solid #272727;
+			padding: 11px;
+			border-radius: 0;
+			outline: none;
+			width: 100%;
+		}
+	}
+	.WhatPeopleNeed {
+		padding: 35px 0 0 0%;
+		text-align: center;
+		// padding: 12px;
+	}
+	.ItemDetailImage{
+		max-width: 70vw;
+	}
+}
+@media only screen and (min-width: 875px) and (max-width: 1090px) {
+
+	.logo-text {
+		font-size: 1rem;
+		margin: 0;
+		padding: 0;
+		font-weight: 800;
+		font-family: 'Oswald';
+		letter-spacing: 6px;
+		color: #000000;
+	}
+}
 @media only screen and (max-width: 850px) {
+	.Content{
+		margin-top: 0px;
+		margin-left: 0;
+		width: 100vw;
+		display: inline-block;
+	}
+	.WhatPeopleNeed {
+		padding: 0;
+		text-align: center;
+	}
 	.profileFlex {
 		flex-direction: column;
 		.secondDiv {
@@ -1451,11 +1685,12 @@ textarea {
 		height: 122px;
 	}
 	.Search {
+		padding: 20px;
 		top: 73px;
 		right: 0;
 		left: 0;
 		margin: auto;
-		width: 100%;
+		width: 80%;
 		text-align: center;
 	}
 	.searchButtonHome {
@@ -1520,6 +1755,7 @@ textarea {
 	}
 	.WhatPeopleNeed {
 		padding-left: 0px;
+		text-align: center;
 	}
 	.categoryResults {
 		padding-left: 0px;
@@ -1557,9 +1793,9 @@ textarea {
 	}
 	.UserPanel {
 		margin-left: 0;
-		padding: 15px;
+		// padding: 15px;
 		text-align: center;
-		padding: 30px;
+		// padding: 30px;
 		margin: 0px;
 	}
 	.profile-icon {
@@ -1601,6 +1837,114 @@ textarea {
 		width: 80% !important;
 	}
 }
+@media only screen and (max-width: 790px) {
+	.logo-text {
+		display: none;
+		// font-size: 0.5rem;
+	}
+}
+@media only screen and (min-width: 780px) and (max-width: 1000px){
+	.header-logo-img {
+		width: 55%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.App .header-alt button {
+	  margin-top: 20px;
+	}
+	.categoryResults {
+		padding-left: 80px;
+		padding-left: 0px;
+		width: 105%;
+	}
+	.aboutTitle {
+		margin-left: 15rem;
+	}
+	.Search {
+		padding: 20px;
+		text-align: center;
+	}
+	.sub-menu {
+		display: none;
+		position: fixed;
+		width: 100%;
+		text-align: left;
+	}
+	.SideBar {
+		display: none;
+	}
+	.searchHeight {
+		width: 50%;
+	}
+	.post-button-box {
+		display: inline-block;
+		text-align: left;
+		width: 16%;
+		margin-left: 0px;
+		img {
+			height: 40px;
+		}
+	}
+	.WhatYouNeed {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.logo-text {
+		font-size: 0.8rem;
+		margin: 0;
+		padding: 0;
+		font-weight: 800;
+		font-family: 'Oswald';
+		letter-spacing: 6px;
+		color: #000000;
+	}
+	.sub-menu-li {
+		a {
+			color: #fff;
+			font-family: 'Oswald';
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+	}
+	.WhatPeopleNeed {
+		padding: 0px;
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 780px){
+	.header-logo-img {
+		width: 65%;
+	}
+	.App .header-alt button {
+	  margin-top: 20px;
+	}
+	.sideBar {
+		width: 30%;
+	}
+	.searchHeight {
+		width: 50%;
+	}
+	.post-button-box {
+		display: inline-block;
+		text-align: left;
+		width: 12%;
+		margin-left: 0px;
+	}
+	.categoryResults {
+		padding-left: 0px;
+		width: 105%;
+	}
+	.WhatYouNeed {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.WhatPeopleNeed {
+		padding: 0px;
+		text-align: center;
+	}
+}
 @media only screen and (max-width: 620px) {
 	.site-title {
 		img {
@@ -1613,130 +1957,20 @@ textarea {
 		width: 100%;
 	}
 }
-@media only screen and (max-width: 520px) {
-	.posted-type {
-		height: 28px;
-		width: 115px;
+@media only screen and (max-width: 600px) {
+	.App .header-alt button {
+	  margin-top: 10px;
+	  font-size: 1em;
 	}
-	.Search {
-		.top-input {
-			padding: 4px;
-		}
-		button {
-			font-size: 26px;
-		}
+	.header-logo-img {
+		width: 75%;
 	}
-	.post-button-box {
-		img {
-			right: auto;
-			left: 177px;
-		}
-	}
-	.Contact {
-		h4 {
-			font-size: 18px;
-			line-height: 25px;
-		}
-	}
-	.mobile-login-box {
-		font-size: 16px;
-	}
-	.registerText {
-		font-size: 16px;
-	}
-	.NeedForm {
-		#itemBudget {
-			padding-left: 0;
-		}
-	}
-}
-@media only screen and (max-width: 460px) {
-	.profile-icon {
-		width: 2rem;
-		height: 2rem;
-	}
-	.from-text {
-		font-size: 16px;
-	}
-	.Search {
-		button {
-			font-size: 22px;
-		}
-		top: 80px;
-		input {
-			width: 100%;
-		}
-		.top-input {
-			font-size: 14px;
-		}
-	}
-	.Header {
-		height: 125px;
-	}
-	.post-button-box {
-		img {
-			left: 160px;
-			height: 34px;
-			top: 126px;
-			right: 10px !important;
-			left: auto !important;
-			border: 1px solid #fff;
-		}
-	}
-	.empty-input {
-		margin: 0;
-		border-right-width: 1px !important;
-	}
-	.mobile-login-box {
-		font-size: 16px;
-	}
-	.registerText {
-		font-size: 16px;
-	}
-	.site-title {
-		img {
-			height: 78px;
-			top: -22px;
-			left: 5px;
-		}
-	}
-	.douhave-button {
-		padding: 8px 3px;
-		font-size: 12px;
+	.btn-post-it {
 		width: 100%;
 	}
-}
-@media only screen and (max-width: 360px) {
-	.post-button-box {
-		img {
-			right: auto;
-			left: 150px;
-			top: 129px;
-		}
-	}
-	select.SearchDropDown.top-input {
-		width: 100px;
-	}
-	.Search {
-		button {
-			font-size: 20px;
-		}
-		top: 80px;
-		input {
-			width: 100%;
-		}
-	}
-	.Header {
-		height: 128px;
-	}
-	.posted-type {
-		height: 23px;
-		width: 98px;
-	}
-	.site-title {
-		img {
-			height: 70px;
-		}
+	.WhatPeopleNeed {
+		padding: 0px;
+		text-align: center;
 	}
 }
 @media only screen and (min-width: 550px) and (max-width: 600px) {
@@ -1798,288 +2032,153 @@ textarea {
 		width: 50%;
 	}
 	.WhatPeopleNeed {
-		padding-left: 0px;
-	}
-	.categoryResults {
-		padding-left: 0px;
-	}
-}
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-	.sideBar {
-		width: 30%;
-	}
-	.searchHeight {
-		width: 50%;
-	}
-	.post-button-box {
-		display: inline-block;
-		text-align: left;
-		width: 12%;
-		margin-left: 0px;
-	}
-	.categoryResults {
-		padding-left: 0px;
-		width: 105%;
-	}
-	.WhatYouNeed {
+		padding: 0;
 		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
+	}
+	.categoryResults {
+		padding-left: 0px;
 	}
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-	.categoryResults {
-		padding-left: 80px;
-		padding-left: 0px;
-		width: 105%;
-	}
-	.aboutTitle {
-		margin-left: 15rem;
+@media only screen and (max-width: 520px) {
+	.posted-type {
+		height: 28px;
+		width: 115px;
 	}
 	.Search {
-		text-align: center;
-	}
-	.sub-menu {
-		display: none;
-		position: fixed;
-		width: 100%;
-		text-align: left;
-	}
-	.SideBar {
-		display: none;
-	}
-	.searchHeight {
-		width: 50%;
+		padding: 20px;
+		.top-input {
+			padding: 4px;
+		}
+		button {
+			font-size: 26px;
+		}
 	}
 	.post-button-box {
-		display: inline-block;
-		text-align: left;
-		width: 16%;
-		margin-left: 0px;
 		img {
-			height: 40px;
+			right: auto;
+			left: 177px;
 		}
 	}
-	.WhatYouNeed {
-		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.logo-text {
-		font-size: 10px;
-		margin: 0;
-		padding: 0;
-		font-weight: 800;
-		font-family: 'Oswald';
-		letter-spacing: 6px;
-		color: #000000;
-	}
-	.sub-menu-li {
-		a {
-			color: #fff;
-			font-family: 'Oswald';
-			text-transform: uppercase;
-			font-size: 12px;
+	.Contact {
+		h4 {
+			font-size: 18px;
+			line-height: 25px;
 		}
 	}
-	.WhatPeopleNeed {
-		padding: 0px;
+	.mobile-login-box {
+		font-size: 16px;
+	}
+	.registerText {
+		font-size: 16px;
+	}
+	.NeedForm {
+		#itemBudget {
+			padding-left: 0;
+		}
 	}
 }
-@media only screen and (min-width: 992px) {
-	.drawer-toggle {
-		display: none;
+@media only screen and (max-width: 460px) {
+	.App .header-alt button {
+	  margin-top: 10px;
+	  font-size: 1em;
 	}
-}
-@media only screen and (max-width: 992px) {
-	.sub-menu {
-		display: none;
+	.profile-icon {
+		width: 2rem;
+		height: 2rem;
 	}
-	.message-box {
-		padding: 20% 10%;
+	.from-text {
+		font-size: 16px;
 	}
-	.mobile-login {
-		display: none;
-	}
-	.WhatPeopleNeed {
-		text-align: center;
-		padding: 12px;
-	}
-	.CategoryItems {
-		text-align: center;
-		padding: 12px;
-	}
-	.SignupInput {
+	.Search {
+		padding: 20px;
+		button {
+			font-size: 22px;
+		}
+		top: 80px;
 		input {
-			border: 1px solid #272727;
-			padding: 11px;
-			border-radius: 0;
-			outline: none;
+			width: 100%;
+		}
+		.top-input {
+			font-size: 14px;
+		}
+	}
+	.Header {
+		height: 125px;
+	}
+	.post-button-box {
+		img {
+			left: 160px;
+			height: 34px;
+			top: 126px;
+			right: 10px !important;
+			left: auto !important;
+			border: 1px solid #fff;
+		}
+	}
+	.empty-input {
+		margin: 0;
+		border-right-width: 1px !important;
+	}
+	.mobile-login-box {
+		font-size: 16px;
+	}
+	.registerText {
+		font-size: 16px;
+	}
+	.site-title {
+		img {
+			height: 78px;
+			top: -22px;
+			left: 5px;
+		}
+	}
+	.douhave-button {
+		padding: 8px 3px;
+		font-size: 12px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 403px) {
+	.App .header-alt button {
+	  margin-top: 10px;
+	  font-size: 0.7em;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.App .header-alt button {
+	  margin-top: 10px;
+	  font-size: 0.6em;
+	}
+	.post-button-box {
+		img {
+			right: auto;
+			left: 150px;
+			top: 129px;
+		}
+	}
+	select.SearchDropDown.top-input {
+		width: 100px;
+	}
+	.Search {
+		padding: 20px;
+		button {
+			font-size: 20px;
+		}
+		top: 80px;
+		input {
 			width: 100%;
 		}
 	}
-}
-@media only screen and (max-width: 600px) {
-	.header-logo-img {
-		width: 100%;
+	.Header {
+		height: 128px;
 	}
-	.btn-post-it {
-		width: 100%;
+	.posted-type {
+		height: 23px;
+		width: 98px;
 	}
-}
-@media only screen and (max-width: 767px) {
-	.logo-text {
-		display: none;
-	}
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-	.Categories {
-		padding-left: 40px;
-		padding-left: 40px;
-	}
-	.categoryResults {
-		padding-left: 80px;
-		padding-left: 80px;
-		padding-left: 0px;
-		width: 105%;
-	}
-	.aboutTitle {
-		margin-left: 15rem;
-	}
-	.Search {
-		text-align: center;
-	}
-	.sideBar {
-		width: 30%;
-	}
-	.searchHeight {
-		width: 50%;
-	}
-	.post-button-box {
-		display: inline-block;
-		text-align: left;
-		width: 16%;
-		margin-left: 50px;
+	.site-title {
 		img {
-			height: 40px;
+			height: 70px;
 		}
-	}
-	.WhatYouNeed {
-		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-@media only screen and (min-width: 1200px) {
-	.Categories {
-		padding-left: 40px;
-	}
-	.aboutTitle {
-		margin-left: 15rem;
-	}
-	.categoryResults {
-		padding-left: 80px;
-	}
-	.post-button-box {
-		width: 36%;
-		margin-left: 100px;
-	}
-}
-@media only screen and (min-width: 1350px) {
-	.post-button-box {
-		width: 36%;
-		margin-left: 110px;
-	}
-	.Categories {
-		padding-left: 40px;
-	}
-	.categoryResults {
-		padding-left: 80px;
-	}
-}
-@media only screen and (min-width: 1500px) {
-	.Categories {
-		padding-left: 40px;
-	}
-	.categoryResults {
-		padding-left: 80px;
-	}
-	.post-button-box {
-		width: 36%;
-		margin-left: 120px;
-	}
-}
-@media only screen and (min-width: 1600px) {
-	.Categories {
-		padding-left: 40px;
-	}
-	.post-button-box {
-		width: 36%;
-		margin-left: 120px;
-	}
-	.categoryResults {
-		padding-left: 80px;
-	}
-}
-@media only screen and (min-width: 1700px) {
-	.Categories {
-		padding-left: 40px;
-	}
-	.post-button-box {
-		width: 36%;
-		margin-left: 130px;
-	}
-	.categoryResults {
-		padding-left: 80px;
-	}
-}
-@media only screen and (min-width: 1800px) {
-	.Categories {
-		padding-left: 40px;
-	}
-	.post-button-box {
-		width: 36%;
-		margin-left: 140px;
-	}
-	.categoryResults {
-		padding-left: 80px;
-	}
-}
-@media only screen and (max-width: 1600px) {
-
-}
-@media only screen and (max-width: 1400px) {
-	.WhatPeopleNeed {
-		padding: 105px 14%;
-	}
-	.sub-menu-li {
-		a {
-			font-size: 16px;
-		}
-	}
-}
-@media only screen and (max-width: 1279px) {
-	.WhatPeopleNeed {
-		padding: 100px 14%;
-	}
-}
-@media only screen and (max-width: 1150px) {
-	.WhatPeopleNeed {
-		padding: 95px 14%;
-	}
-}
-@media only screen and (max-width: 1099px) {
-	.WhatPeopleNeed {
-		padding: 129px 14%;
-	}
-}
-@media only screen and (max-width: 1025px) {
-	.WhatPeopleNeed {
-		padding: 110px 14%;
-	}
-}
-@media only screen and (max-width: 575px) {
-	.WhatPeopleNeed {
-		padding: 130px 1%;
 	}
 }

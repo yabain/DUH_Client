@@ -1,0 +1,183 @@
+// @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// body {
+//   background-color: #181717;
+// }
+
+// .App {
+//   text-align: center;
+// }
+* {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.App .header-alt button {
+  //   margin: 20px;
+}
+
+:root {
+  --primary: #39A9DB;
+  --warning: #F9DC5C;
+  --danger: #E84855;
+  --success: #ABE188;
+  --white: #fdfdfd;
+  --dark: #302e2e;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Button Colors and Styles */
+
+.btn--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn--warning--solid {
+  border: 4px solid var(--white);
+  font-style: italic !important;
+  box-shadow: -1px 1px 7px 7px rgb(245, 241, 241) !important;
+  background-color: var(--dark);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.btn--warning--solid:hover {
+  border: 4px solid var(--dark);
+  font-style: italic !important;
+  box-shadow: -1px 1px 7px 7px rgb(245, 241, 241) !important;
+  background-color: var(--white);
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.btn--dark--solid {
+  background-color: var(--white);
+  color: var(--dark);
+  border: none;
+}
+
+.btn--danger--solid {
+  background-color: var(--danger);
+  color: var(--white);
+  border: none;
+}
+
+.btn--success--solid {
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+}
+
+.btn--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--dark);
+  color: var(--dark);
+}
+
+.btn--warning--outline {
+  background-color: transparent;
+  border: 2px solid var(--dark);
+  color: var(--dark);
+}
+
+.btn--danger--outline {
+  background-color: transparent;
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+
+.btn--success--outline {
+  background-color: transparent;
+  border: 2px solid var(--success);
+  color: var(--success);
+}
+
+/* Button Size */
+
+.btn--medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.blogPosition{
+  padding: 170px 0 0 0%;
+}
+
+.cardItem {
+  // min-width: 300px;
+  // max-width: 300px;
+  /* max-height: 360px; */
+  /* min-height: 360px; */
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  /* background-size: 100px;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: -5%; */
+  // margin: 20px;
+  // padding: 10px;
+  // text-align: right;
+}
+.cardItem:hover {
+  box-shadow: 5px 5px 10px #212020, -5px -5px 10px #ffffff !important;
+}
+
+@media only screen and (max-width: 365px) {
+
+  .App .header-alt button {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 346px) {
+
+  .App .header-alt button {
+    font-size: 0.6em;
+  }
+}

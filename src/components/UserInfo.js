@@ -271,7 +271,7 @@ class UserInfo extends Component {
     const { token } = UserService.getUserSessionDetails() || {};
     if (!edit) {
       return (
-        <div style={{ paddingTop: "30px" }} className="UserInfo">
+        <div style={{padding: '120px 10px'}} className="UserInfo">
           <div className="profileFlex d-flex " style={{ textAlign: "left" }}>
             <div>
               <img
