@@ -2,6 +2,8 @@
   "name": "douhave-website",
   "version": "1.0.2",
   "private": true,
+  "homepage": ".",
+
   "dependencies": {
     "axios": "^0.25.0",
     "bootstrap": "^5.1.3",
