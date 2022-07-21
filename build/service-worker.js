@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://web.douhave.co/precache-manifest.994c673d10764c6eff6cd97ae8bee723.js"
+  "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/precache-manifest.e2db650123b12234dd448e067d9bc3fc.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https://web.douhave.co/index.html", {
+workbox.routing.registerNavigationRoute("http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

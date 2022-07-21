@@ -2,8 +2,6 @@
   "name": "douhave-website",
   "version": "1.0.2",
   "private": true,
-  "homepage": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com",
-
   "dependencies": {
     "axios": "^0.25.0",
     "bootstrap": "^5.1.3",
