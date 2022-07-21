@@ -1612,7 +1612,7 @@ textarea {
 }
 @media only screen and (max-width: 992px) {
 	.blogPosition{
-	  padding: 115px 0 0 0%;
+	  padding: 112px 0 0 0%;
 	}
 	.sub-menu {
 		display: none;
@@ -1916,6 +1916,9 @@ textarea {
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 780px){
+	.blogPosition{
+	  padding: 80px 0 0 0%;
+	}
 	.header-logo-img {
 		width: 65%;
 	}
@@ -1964,6 +1967,9 @@ textarea {
 	}
 }
 @media only screen and (max-width: 600px) {
+	.blogPosition{
+	  padding: 43px 0 0 0%;
+	}
 	.App .header-alt button {
 	  margin-top: 10px;
 	  font-size: 1em;
@@ -2049,6 +2055,9 @@ textarea {
 	}
 }
 @media only screen and (max-width: 520px) {
+	.blogPosition{
+	  padding: 78px 0 0 0%;
+	}
 	.posted-type {
 		height: 28px;
 		width: 115px;
