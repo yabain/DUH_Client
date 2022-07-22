@@ -1,7 +1,7 @@
 {
   "main.css": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/css/main.80aff073.chunk.css",
-  "main.js": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/js/main.b1164c98.chunk.js",
-  "main.js.map": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/js/main.b1164c98.chunk.js.map",
+  "main.js": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/js/main.12c816a9.chunk.js",
+  "main.js.map": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/js/main.12c816a9.chunk.js.map",
   "static/css/1.c4f4b9fd.chunk.css": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/css/1.c4f4b9fd.chunk.css",
   "static/js/1.cd1c5720.chunk.js": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/js/1.cd1c5720.chunk.js",
   "static/js/1.cd1c5720.chunk.js.map": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/js/1.cd1c5720.chunk.js.map",
@@ -25,9 +25,9 @@
   "static/media/App.scss": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/media/RiverhackSwashes.b1aed51f.otf",
   "static/media/Oswald-Regular.ttf": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/media/Oswald-Regular.e1996192.ttf",
   "static/media/Oswald-Light.ttf": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/media/Oswald-Light.58252c8c.ttf",
-  "static/css/main.80aff073.chunk.css.map": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/css/main.80aff073.chunk.css.map",
   "static/css/1.c4f4b9fd.chunk.css.map": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/css/1.c4f4b9fd.chunk.css.map",
+  "static/css/main.80aff073.chunk.css.map": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/static/css/main.80aff073.chunk.css.map",
   "index.html": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/index.html",
-  "precache-manifest.e2db650123b12234dd448e067d9bc3fc.js": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/precache-manifest.e2db650123b12234dd448e067d9bc3fc.js",
+  "precache-manifest.00b8cb4ee0be82d164b4fe8c52d913e7.js": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/precache-manifest.00b8cb4ee0be82d164b4fe8c52d913e7.js",
   "service-worker.js": "http://web-dev.douhave.co.s3-website.us-east-2.amazonaws.com/service-worker.js"
 }

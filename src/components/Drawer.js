@@ -258,7 +258,7 @@ let options = [
       {
         id: 34,
         name: "  TicTok",
-        icon: <FaMusic />,
+        icon: <FaTiktok />,
         to: "https://www.tiktok.com/@team.douhave?lang=en",
       },
     ],
