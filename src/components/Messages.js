@@ -34,7 +34,7 @@ class Messages extends Component {
     };
 
     return (
-      <div className="message-box">
+      <div className="message-box" style={{paddingTop: '120px'}}>
         <div className="Messages">
           <Container className="w-100">
             <Nav tabs>

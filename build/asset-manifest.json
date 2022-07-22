@@ -1,7 +1,7 @@
 {
   "main.css": "https://web.douhave.co/static/css/main.83981ef4.chunk.css",
-  "main.js": "https://web.douhave.co/static/js/main.449de1b2.chunk.js",
-  "main.js.map": "https://web.douhave.co/static/js/main.449de1b2.chunk.js.map",
+  "main.js": "https://web.douhave.co/static/js/main.c4e6b04f.chunk.js",
+  "main.js.map": "https://web.douhave.co/static/js/main.c4e6b04f.chunk.js.map",
   "static/css/1.c4f4b9fd.chunk.css": "https://web.douhave.co/static/css/1.c4f4b9fd.chunk.css",
   "static/js/1.cd1c5720.chunk.js": "https://web.douhave.co/static/js/1.cd1c5720.chunk.js",
   "static/js/1.cd1c5720.chunk.js.map": "https://web.douhave.co/static/js/1.cd1c5720.chunk.js.map",
@@ -28,6 +28,6 @@
   "static/css/main.83981ef4.chunk.css.map": "https://web.douhave.co/static/css/main.83981ef4.chunk.css.map",
   "static/css/1.c4f4b9fd.chunk.css.map": "https://web.douhave.co/static/css/1.c4f4b9fd.chunk.css.map",
   "index.html": "https://web.douhave.co/index.html",
-  "precache-manifest.9781a36d0b6222459c80a3c6e9111660.js": "https://web.douhave.co/precache-manifest.9781a36d0b6222459c80a3c6e9111660.js",
+  "precache-manifest.d0c31f83d0ad724c6c7b79c79adc2129.js": "https://web.douhave.co/precache-manifest.d0c31f83d0ad724c6c7b79c79adc2129.js",
   "service-worker.js": "https://web.douhave.co/service-worker.js"
 }

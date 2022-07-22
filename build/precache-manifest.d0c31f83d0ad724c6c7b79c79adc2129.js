@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "449de1b2449c5b49a816",
+    "revision": "c4e6b04fe19cba93dde9",
     "url": "https://web.douhave.co/static/css/main.83981ef4.chunk.css"
   },
   {
-    "revision": "449de1b2449c5b49a816",
-    "url": "https://web.douhave.co/static/js/main.449de1b2.chunk.js"
+    "revision": "c4e6b04fe19cba93dde9",
+    "url": "https://web.douhave.co/static/js/main.c4e6b04f.chunk.js"
   },
   {
     "revision": "cd1c57208c4fbb1729bc",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "https://web.douhave.co/static/media/Oswald-Light.58252c8c.ttf"
   },
   {
-    "revision": "022704e0d0a84b1fa9af779ce2b8f636",
+    "revision": "e43b5b7ce9cf5955d82f6e9ff80681c7",
     "url": "https://web.douhave.co/index.html"
   }
 ];
