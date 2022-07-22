@@ -67,8 +67,9 @@ class Login extends Component {
       email: signInEmailLower,
       password: signInPassword,
     };
-
+    console.log("Loading ")
     let json = await ApiService.login(params);
+    console.log("json result ",json);
 
     if (json.message === "Auth Successful") {
       setCookie({ token: json.token });
@@ -96,7 +97,7 @@ class Login extends Component {
         window.location = "/";
       } else {
         // window.location.reload();
-        // window.location = "/WhatPeopleNeed";
+        window.location.href = "/WhatPeopleNeed";
       }
     } else {
       this.setState({

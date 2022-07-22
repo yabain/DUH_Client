@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9e1ffa863d0cdc7544cf",
+    "revision": "449de1b2449c5b49a816",
     "url": "https://web.douhave.co/static/css/main.83981ef4.chunk.css"
   },
   {
-    "revision": "9e1ffa863d0cdc7544cf",
-    "url": "https://web.douhave.co/static/js/main.9e1ffa86.chunk.js"
+    "revision": "449de1b2449c5b49a816",
+    "url": "https://web.douhave.co/static/js/main.449de1b2.chunk.js"
   },
   {
     "revision": "cd1c57208c4fbb1729bc",
@@ -80,12 +80,12 @@ self.__precacheManifest = [
     "url": "https://web.douhave.co/static/media/Primary Logo- Pure Black.718fab04.png"
   },
   {
-    "revision": "b1aed51f7a6c63efb554902440a47575",
-    "url": "https://web.douhave.co/static/media/RiverhackSwashes.b1aed51f.otf"
-  },
-  {
     "revision": "a89f53e866ba44f054eca2d63ef24b30",
     "url": "https://web.douhave.co/static/media/RIVERHACK_CYR.a89f53e8.otf"
+  },
+  {
+    "revision": "b1aed51f7a6c63efb554902440a47575",
+    "url": "https://web.douhave.co/static/media/RiverhackSwashes.b1aed51f.otf"
   },
   {
     "revision": "e1996192b98a516646ff9a8c0c0ca90c",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "https://web.douhave.co/static/media/Oswald-Light.58252c8c.ttf"
   },
   {
-    "revision": "b88c1fc6c15920b8e71106afdff8050a",
+    "revision": "022704e0d0a84b1fa9af779ce2b8f636",
     "url": "https://web.douhave.co/index.html"
   }
 ];
