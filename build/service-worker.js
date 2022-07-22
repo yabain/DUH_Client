@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://web.douhave.co/precache-manifest.b5feaa2b924bff44ec8ccfc58d4ae94b.js"
+  "https://web.douhave.co/precache-manifest.9d22d33dbe0eacd8982f3618deed63e4.js"
 );
 
 workbox.clientsClaim();
