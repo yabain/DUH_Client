@@ -8,18 +8,20 @@ import ItemService from "../services/ItemService";
 import OfferService from "../services/OfferService";
 import SocketService from "../services/SocketService";
 import UserService from "../services/UserService";
-
+import { withRouter } from "../util/withRouter";
 /**
  * Chat view component
  * It shows an item chat view sections
  * @author dassiorleando
  */
+
+
 class ChatView extends Component {
   constructor(props) {
     super(props);
     this.itemToShow = {};
     this.state = { loading: false, itemToShow: {}, selectedRoomId: null };
-    this.itemId = this.props.match.params.itemId;
+    this.itemId = this.props.params.itemId;
   }
 
   /**
@@ -182,4 +184,4 @@ class ChatView extends Component {
   }
 }
 
-export default ChatView;
+export default withRouter(ChatView);
