@@ -10,7 +10,7 @@ class Blog extends Component {
           title="Blog"
           width="100%"
           height="1000"
-          src="https://52.60.84.148/">
+          src="https://blog.douhave.co">
         </iframe>
       </div>
     );

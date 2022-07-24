@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c4e6b04fe19cba93dde9",
-    "url": "https://web.douhave.co/static/css/main.83981ef4.chunk.css"
+    "revision": "bb126be5533b21cc405e",
+    "url": "https://web.douhave.co/static/css/main.04bd7918.chunk.css"
   },
   {
-    "revision": "c4e6b04fe19cba93dde9",
-    "url": "https://web.douhave.co/static/js/main.c4e6b04f.chunk.js"
+    "revision": "bb126be5533b21cc405e",
+    "url": "https://web.douhave.co/static/js/main.bb126be5.chunk.js"
   },
   {
     "revision": "cd1c57208c4fbb1729bc",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "https://web.douhave.co/static/media/Button- Submit.83e8d0bb.png"
   },
   {
-    "revision": "d89e5759c382a5e0aae660cb3efcbd83",
-    "url": "https://web.douhave.co/static/media/user3.d89e5759.jpg"
+    "revision": "9deda0734be79caf021f8af800936316",
+    "url": "https://web.douhave.co/static/media/user3.9deda073.jpg"
   },
   {
     "revision": "295e8f2e171be3b7f35bed39eeff194e",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "https://web.douhave.co/static/media/Oswald-Light.58252c8c.ttf"
   },
   {
-    "revision": "e43b5b7ce9cf5955d82f6e9ff80681c7",
+    "revision": "0bc3c19fd74f3f3fdfbbaf47d113aa36",
     "url": "https://web.douhave.co/index.html"
   }
 ];
