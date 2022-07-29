@@ -31,7 +31,8 @@ import Constant from './util/Constant.js';
 import { getCookie } from './util/storage.js';
 import ApiService from './services/ApiService.js';
 import MetaTags from './components/MetaTags.js';
-import Blog from './components/Blog.js'
+import Blog from './components/Blog.js';
+import EmailVerification from './components/EmailVerification.js';
 
 import './App.scss';
 import './Appstyle.scss';
@@ -283,6 +284,7 @@ class App extends Component {
                   />
                   <Route path={'/HowItWorks'} element={<HowItWorks />} />
                   <Route path={'/Blog'} element={<Blog />} />
+                  <Route path={'/EmailVerification'} element={<EmailVerification />} />
                   <Route path={'/PaymentFormLoader'} element={<PaymentFormLoader />} />
 
                   <Route path={'/About'} element={<About />} />

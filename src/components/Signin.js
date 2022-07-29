@@ -213,6 +213,12 @@ class Login extends Component {
               alt="Submit"
             />
           </button>
+                <div className="google-btn" style={{marginLeft: "auto", marginRight: "auto"}}>
+                  <div className="google-icon-wrapper">
+                    <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                  </div>
+                  <p className="btn-text">Sign In with Google</p>
+                </div>
         </div>
       </div>
     );

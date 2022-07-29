@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PostButton from "../img/Button- Post It.png";
+import PostButton from "../img/Button-Post_It.png";
 import Logo from "../img/image-logo.png";
 import TopBarGold from "../img/Top Bar- Gold.png";
 import Drawer from "./Drawer";
@@ -26,17 +26,7 @@ class Header extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-4 col-4 d-flex justify-content-start align-items-center">
-                <a href="/WhatYouNeed">
-                  <Button
-                    type="button"
-                    buttonStyle="btn--warning--solid"
-                    buttonSize="btn--medium"
-                    style={{
-                      boxShadow: '1px 2px 9px #F4AAB9',
-                      margin: '4em',
-                      padding: '1em',
-                    }}
-                  ><b>POST IT</b></Button>
+                <a href="/WhatYouNeed"><img className="header-logo-img" src={PostButton} alt="PostButton" />
                 </a>
               </div>
               <div className="col-lg-4 col-4 d-flex justify-content-center align-items-center">

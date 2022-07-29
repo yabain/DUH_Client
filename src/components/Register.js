@@ -315,7 +315,7 @@ class Register extends Component {
             border: "none",
             backgroundColor: "transparent",
             marginTop: "20px",
-            marginBottom: "70px",
+            marginBottom: "50px",
             cursor: "pointer",
           }}
           onClick={this.onSignUp}
@@ -329,6 +329,15 @@ class Register extends Component {
             alt="Submit"
           />
         </button>
+                <div className="google-btn" style={{
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  marginBottom: "50px",}}>
+                  <div className="google-icon-wrapper">
+                    <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                  </div>
+                  <p className="btn-text">Sign Up with Google</p>
+                </div>
       </div>
     );
   }

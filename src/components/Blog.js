@@ -5,7 +5,6 @@ class Blog extends Component {
   render() {
     return (
       <div className="blogPosition">
-      <SubMenu />
         <iframe id="blog"
           title="Blog"
           width="100%"

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactS3Uploader from "react-s3-uploader";
 import { Spinner } from "reactstrap";
-import PostButton from "../img/Button- Post It.png";
+import PostButton from "../img/Button-Post_It.png";
 import UploadPhotoButton from "../img/Button-Upload-Photo.png";
 import checkmark1 from "../img/checkmark1.png";
 import BestMatchesButton from "../img/Matches-Gold.png";
